@@ -7,7 +7,7 @@ const fieldSchema = new mongoose.Schema({
 });
 
 const schemaSchema = new mongoose.Schema({
-  tableName: { type: String, required: true },
+ 
   fields: [fieldSchema],
   code: { type: String, required: true },
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", default: null },
